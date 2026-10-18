@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:fluxguard_db}
+    driverClassName: org.postgresql.Driver
+    username: ${DB_USER:fluxguard_user}
+    password: ${DB_PASSWORD:fluxguard_secret}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false

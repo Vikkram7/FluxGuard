@@ -1,0 +1,268 @@
+{
+  "project": "FluxGuard PMSM",
+  "description": "Reproducible synthetic PMSM operating datasets for flux degradation diagnostics",
+  "generated_at": "2026-10-18T20:00:00Z",
+  "nominal_parameters": {
+    "p": 4,
+    "Rs_ohm": 0.45,
+    "Ld_H": 0.0035,
+    "Lq_H": 0.0035,
+    "psi_f_ref_Wb": 0.085,
+    "T_ref_C": 20.0,
+    "alpha_psi_per_K": -0.0011,
+    "J_kgm2": 0.0018,
+    "B_nms": 0.00035
+  },
+  "scenarios": {
+    "healthy_constant": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 8.42,
+      "max_speed_rpm": 1510.75,
+      "min_temp_c": 25.0,
+      "max_temp_c": 25.0,
+      "min_norm_res_pct": -5.485,
+      "max_norm_res_pct": 0.553
+    },
+    "healthy_varying_speed": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL",
+        "SENSOR_FAULT"
+      ],
+      "min_speed_rpm": 2.98,
+      "max_speed_rpm": 2265.93,
+      "min_temp_c": 30.0,
+      "max_temp_c": 30.0,
+      "min_norm_res_pct": -4.984,
+      "max_norm_res_pct": 47.571
+    },
+    "healthy_varying_load": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 13.55,
+      "max_speed_rpm": 1744.13,
+      "min_temp_c": 35.0,
+      "max_temp_c": 35.0,
+      "min_norm_res_pct": -5.178,
+      "max_norm_res_pct": 1.678
+    },
+    "reversible_temperature_variation": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 9.74,
+      "max_speed_rpm": 1642.53,
+      "min_temp_c": 25.0,
+      "max_temp_c": 105.0,
+      "min_norm_res_pct": -5.605,
+      "max_norm_res_pct": 0.553
+    },
+    "synthetic_flux_reduction_5pct": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL",
+        "UNCERTAIN",
+        "SUSPECTED_FLUX_DEGRADATION"
+      ],
+      "min_speed_rpm": 9.49,
+      "max_speed_rpm": 1533.81,
+      "min_temp_c": 40.0,
+      "max_temp_c": 40.0,
+      "min_norm_res_pct": -5.002,
+      "max_norm_res_pct": 2.249
+    },
+    "synthetic_flux_reduction_10pct": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL",
+        "UNCERTAIN",
+        "SUSPECTED_FLUX_DEGRADATION"
+      ],
+      "min_speed_rpm": 9.49,
+      "max_speed_rpm": 1533.81,
+      "min_temp_c": 40.0,
+      "max_temp_c": 40.0,
+      "min_norm_res_pct": -10.004,
+      "max_norm_res_pct": 2.249
+    },
+    "synthetic_flux_reduction_15pct": {
+      "samples": 1200,
+      "duration_s": 11.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL",
+        "UNCERTAIN",
+        "SUSPECTED_FLUX_DEGRADATION"
+      ],
+      "min_speed_rpm": 9.49,
+      "max_speed_rpm": 1533.81,
+      "min_temp_c": 40.0,
+      "max_temp_c": 40.0,
+      "min_norm_res_pct": -15.006,
+      "max_norm_res_pct": 2.249
+    },
+    "current_sensor_offset": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 9.74,
+      "max_speed_rpm": 1533.46,
+      "min_temp_c": 25.0,
+      "max_temp_c": 25.0,
+      "min_norm_res_pct": -7.054,
+      "max_norm_res_pct": 0.553
+    },
+    "voltage_measurement_noise": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 9.19,
+      "max_speed_rpm": 1531.73,
+      "min_temp_c": 30.0,
+      "max_temp_c": 30.0,
+      "min_norm_res_pct": -7.39,
+      "max_norm_res_pct": 3.898
+    },
+    "temperature_sensor_bias": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 9.66,
+      "max_speed_rpm": 1533.58,
+      "min_temp_c": 48.0,
+      "max_temp_c": 48.0,
+      "min_norm_res_pct": -3.349,
+      "max_norm_res_pct": 3.178
+    },
+    "low_speed_operation": {
+      "samples": 800,
+      "duration_s": 7.99,
+      "states_observed": [
+        "INITIALIZING",
+        "INSUFFICIENT_DATA"
+      ],
+      "min_speed_rpm": -7.94,
+      "max_speed_rpm": 45.0,
+      "min_temp_c": 25.0,
+      "max_temp_c": 25.0,
+      "min_norm_res_pct": -0.013,
+      "max_norm_res_pct": 0.553
+    },
+    "transient_acceleration": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL",
+        "SENSOR_FAULT"
+      ],
+      "min_speed_rpm": 3.67,
+      "max_speed_rpm": 3016.81,
+      "min_temp_c": 35.0,
+      "max_temp_c": 35.0,
+      "min_norm_res_pct": -4.712,
+      "max_norm_res_pct": 1.678
+    },
+    "parameter_mismatch_rs": {
+      "samples": 1000,
+      "duration_s": 9.99,
+      "states_observed": [
+        "INITIALIZING",
+        "NORMAL"
+      ],
+      "min_speed_rpm": 8.34,
+      "max_speed_rpm": 1510.85,
+      "min_temp_c": 30.0,
+      "max_temp_c": 30.0,
+      "min_norm_res_pct": -10.48,
+      "max_norm_res_pct": 1.112
+    }
+  },
+  "experimental_ml_evaluation": {
+    "accuracy": 0.9799363836554931,
+    "classification_report": {
+      "INSUFFICIENT_DATA": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 231.0
+      },
+      "NORMAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3142.0
+      },
+      "SENSOR_FAULT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2.0
+      },
+      "SUSPECTED_FLUX_DEGRADATION": {
+        "precision": 0.970074812967581,
+        "recall": 0.8474945533769063,
+        "f1-score": 0.9046511627906977,
+        "support": 459.0
+      },
+      "UNCERTAIN": {
+        "precision": 0.77491961414791,
+        "recall": 0.9525691699604744,
+        "f1-score": 0.8546099290780141,
+        "support": 253.0
+      },
+      "accuracy": 0.9799363836554931,
+      "macro avg": {
+        "precision": 0.9489988854230983,
+        "recall": 0.9600127446674762,
+        "f1-score": 0.9518522183737425,
+        "support": 4087.0
+      },
+      "weighted avg": {
+        "precision": 0.982705897120514,
+        "recall": 0.9799363836554931,
+        "f1-score": 0.9802914596960283,
+        "support": 4087.0
+      }
+    },
+    "feature_importances": {
+      "speed_rpm": 0.1567,
+      "temperature_c": 0.0199,
+      "id_a": 0.0375,
+      "iq_a": 0.0554,
+      "vd_v": 0.1095,
+      "vq_v": 0.0868,
+      "estimated_flux_wb": 0.0586,
+      "norm_residual_pct": 0.1163,
+      "smoothed_residual_pct": 0.1918,
+      "uncertainty": 0.1672
+    }
+  }
+}

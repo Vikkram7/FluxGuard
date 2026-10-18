@@ -1,0 +1,78 @@
+# FluxGuard PMSM .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+ENV/
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/wrapper/maven-wrapper.jar
+.project
+.classpath
+.settings/
+*.iml
+.idea/
+
+# Node / React
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Embedded Firmware / C++
+firmware/build/
+firmware/bin/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.suo
+*.user
+Debug/
+Release/
+x64/
+x86/
+
+# MATLAB / Simulink
+*.asv
+*.slxc
+slprj/
+*.autosave
+
+# OS & Temp
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+.env
